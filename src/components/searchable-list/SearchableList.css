@@ -1,0 +1,36 @@
+.searchable-list .searchbar {
+  justify-content: unset;
+  height: 36px;
+  box-shadow: none;
+  border: solid 1px #AEB1C2;
+  border-radius: 12px;
+}
+.searchable-list .searchbar .search-container {
+  order: 3;
+  margin-left: 0px;
+}
+.searchable-list .searchbar .search-container .search-input {
+  line-height: 18px;
+  font-size: 12px;
+  color: #495057;
+  margin-left: 8px;
+}
+.searchable-list .searchbar .icon-button {
+  order: 2;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.searchable-list .searchbar .search-icon {
+  order: 1;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: -36px;
+}
+.searchable-list > .list {
+  display: flex;
+  flex-direction: column;
+}
+.searchable-list > .list > .list-item {
+  display: flex;
+  margin-top: 16px;
+}

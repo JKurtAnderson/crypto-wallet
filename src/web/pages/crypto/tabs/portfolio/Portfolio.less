@@ -1,0 +1,142 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+
+	.spinner {
+		margin-top: 100px;
+		.spinner-grow {
+			animation: 1s linear infinite spinner-grow;
+		}
+		.first {
+			color: #4C54D2 !important;
+		}
+		.second {
+			color: #BF14A2 !important;
+			animation-delay: 0.25s;
+		}
+		.third {
+			color: #F73A1C !important;
+			animation-delay: 0.5s;
+		}
+	}
+
+	.top {
+		display: flex;
+		flex-direction: row;
+
+		.left {
+			display: grid;
+			text-align: left;
+			margin-top: 7px;
+
+			.balance-label {
+				color: #868E96;
+				font-size: 16px;
+				line-height: 24px;
+				margin-block: 0px;
+			}
+
+			.balance-amount {
+				color: #212529;
+				font-size: 36px;
+				line-height: 48px;
+				font-weight: 600;
+			}
+		}
+
+		.right {
+			flex-grow: 1;
+			text-align: right;
+
+			.graph-controls {
+				display: inline-flex;
+				color: #495057;
+				border: 1px solid #E9E9F4;
+				border-radius: 12px;
+				padding: 6px;
+				align-items: center;
+				margin-right: 80px;
+
+				.dot {
+					width: 6px;
+					height: 6px;
+					border-radius: 6px;
+					margin-right: 4px;
+					background-color: #DADCE8;
+				}
+
+				button {
+					display: inline-flex;
+					align-items: center;
+					font-size: 14px;
+					font-weight: bold;
+					padding-left: 4px;
+					padding-right: 4px;
+					margin-right: 4px;
+					border-radius: 4px;
+
+					&.selected {
+						background-color: #495057;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+
+	.bottom {
+		text-align: start;
+		margin-right: 130px;
+		margin-left: 130px;
+
+		.coin-item {
+			display: flex;
+			align-items: center;
+			flex-grow: 1;
+
+			&.selected {
+				background-color: #ebebee;
+
+				&:hover {
+					background-color: #DADCE8;
+				}
+			}
+
+			.coin-label {
+				margin-left: 8px;
+			}
+	
+			.right {
+				flex-grow: 1;
+				text-align: right;
+				display: flex;
+				flex-direction: column;
+
+				.value {
+					font-size: 13px;
+					line-height: 20px;
+					color: #212529;
+				}
+
+				.amount {
+					font-size: 12px;
+					line-height: 18px;
+					color: #868E96;
+				}
+			}
+		}
+
+		.add-coin {
+			margin-top: 16px;
+			border: 1px solid #AEB1C2;
+			border-radius: 32px;
+			padding: 8px 16px;
+			display: flex;
+			align-items: center;
+
+			span {
+				margin-left: 8px;
+			}
+		}
+	}
+}

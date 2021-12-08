@@ -1,0 +1,31 @@
+.App {
+	text-align: center;
+	margin: 24px 70px 24px 46px;
+	font-family: 'Poppins';
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	border-radius: 8px;
+
+	&:focus {
+		background-color: unset;
+		outline: none
+	}
+		
+	&:hover {
+		background-color: #E9E9F4;
+	}
+}
+
+.keyboard-user {
+	button {
+		&:focus {
+			outline: -webkit-focus-ring-color auto 1px;
+		}
+	}
+}

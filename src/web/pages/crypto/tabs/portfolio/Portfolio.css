@@ -1,0 +1,122 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio .spinner {
+  margin-top: 100px;
+}
+.portfolio .spinner .spinner-grow {
+  animation: 1s linear infinite spinner-grow;
+}
+.portfolio .spinner .first {
+  color: #4C54D2 !important;
+}
+.portfolio .spinner .second {
+  color: #BF14A2 !important;
+  animation-delay: 0.25s;
+}
+.portfolio .spinner .third {
+  color: #F73A1C !important;
+  animation-delay: 0.5s;
+}
+.portfolio .top {
+  display: flex;
+  flex-direction: row;
+}
+.portfolio .top .left {
+  display: grid;
+  text-align: left;
+  margin-top: 7px;
+}
+.portfolio .top .left .balance-label {
+  color: #868E96;
+  font-size: 16px;
+  line-height: 24px;
+  margin-block: 0px;
+}
+.portfolio .top .left .balance-amount {
+  color: #212529;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 600;
+}
+.portfolio .top .right {
+  flex-grow: 1;
+  text-align: right;
+}
+.portfolio .top .right .graph-controls {
+  display: inline-flex;
+  color: #495057;
+  border: 1px solid #E9E9F4;
+  border-radius: 12px;
+  padding: 6px;
+  align-items: center;
+  margin-right: 80px;
+}
+.portfolio .top .right .graph-controls .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  margin-right: 4px;
+  background-color: #DADCE8;
+}
+.portfolio .top .right .graph-controls button {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+}
+.portfolio .top .right .graph-controls button.selected {
+  background-color: #495057;
+  color: white;
+}
+.portfolio .bottom {
+  text-align: start;
+  margin-right: 130px;
+  margin-left: 130px;
+}
+.portfolio .bottom .coin-item {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.portfolio .bottom .coin-item.selected {
+  background-color: #ebebee;
+}
+.portfolio .bottom .coin-item.selected:hover {
+  background-color: #DADCE8;
+}
+.portfolio .bottom .coin-item .coin-label {
+  margin-left: 8px;
+}
+.portfolio .bottom .coin-item .right {
+  flex-grow: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio .bottom .coin-item .right .value {
+  font-size: 13px;
+  line-height: 20px;
+  color: #212529;
+}
+.portfolio .bottom .coin-item .right .amount {
+  font-size: 12px;
+  line-height: 18px;
+  color: #868E96;
+}
+.portfolio .bottom .add-coin {
+  margin-top: 16px;
+  border: 1px solid #AEB1C2;
+  border-radius: 32px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+}
+.portfolio .bottom .add-coin span {
+  margin-left: 8px;
+}
